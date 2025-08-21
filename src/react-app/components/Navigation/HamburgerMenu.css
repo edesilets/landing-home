@@ -1,0 +1,147 @@
+/* src/react-app/components/Navigation/HamburgerMenu/HamburgerMenu.css */
+
+/* Hamburger Button */
+.hamburger-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hamburger Lines */
+.hamburger-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation */
+.hamburger-btn.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  background: #1a1a1a;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hamburger-menu.open {
+  left: 0;
+}
+
+.hamburger-menu ul {
+  list-style: none;
+  padding: 80px 0 0 0;
+  margin: 0;
+}
+
+.hamburger-menu li {
+  padding: 0;
+}
+
+.hamburger-menu a {
+  display: block;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hamburger-menu a:hover,
+.hamburger-menu a:focus {
+  background: rgba(255, 255, 255, 0.1);
+  padding-left: 35px;
+  color: #61dafb;
+  outline: none;
+}
+
+/* Focus styles for accessibility */
+.hamburger-btn:focus-visible {
+  outline: 2px solid #646cff;
+  outline-offset: 2px;
+}
+
+.hamburger-menu a:focus-visible {
+  outline: 2px solid #646cff;
+  outline-offset: -2px;
+}
+
+/* Light mode styles */
+@media (prefers-color-scheme: light) {
+  .hamburger-btn span {
+    background: #333;
+  }
+
+  .hamburger-menu {
+    background: #f9f9f9;
+    border-right: 1px solid #eee;
+  }
+
+  .hamburger-menu a {
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger-menu a:hover,
+  .hamburger-menu a:focus {
+    background: rgba(0, 0, 0, 0.05);
+    color: #646cff;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    width: 100%;
+    left: -100%;
+  }
+}
