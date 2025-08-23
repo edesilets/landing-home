@@ -1,11 +1,9 @@
 import { useState } from "react";
 import HamburgerMenu, { type MenuItem } from "./components/Navigation/HamburgerMenu";
 import Profile from "./components/Profile";
-import { useUser } from "./hooks/useUser";
 import "./App.css";
 
 function App() {
-  const { user, loading, error } = useUser();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -45,7 +43,7 @@ function App() {
       />
 
       <main>
-        <Profile user={user} loading={loading} error={error} />
+        <Profile />
       </main>
     </>
   );
