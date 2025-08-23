@@ -22,6 +22,14 @@ function App() {
   // Custom menu items with onClick handlers
   const menuItems: MenuItem[] = [
     {
+      href: "#home",
+      label: "Home",
+      onClick: () => {
+        console.log("Projects clicked");
+        navigateTo('profile');
+      }
+    },
+    {
       href: "#projects",
       label: "Projects",
       onClick: () => {
@@ -47,8 +55,7 @@ function App() {
     },
     {
       href: "https://www.linkedin.com/in/ethandesilets/",
-      label: "Contact",
-      onClick: () => console.log("Contact clicked")
+      label: "Contact"
     },
   ];
 
