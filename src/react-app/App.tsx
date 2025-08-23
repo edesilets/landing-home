@@ -38,7 +38,7 @@ function App() {
       }
     },
     {
-      href: "https://www.instagram.com/ethan_in_the_wild/",
+      href: "#adventures",
       label: "Adventures",
       onClick: () => {
         console.log("Adventures clicked");
@@ -75,6 +75,8 @@ function App() {
           <div className="placeholder-view">
             <h1>Adventures</h1>
             <p>Check out my Instagram for now!</p>
+            <a href="https://www.instagram.com/ethan_in_the_wild/">Instagram</a>
+            <a href="https://connect.garmin.com/modern/profile/a624bd40-ba95-4b43-85ad-97e81321752e">Connect on Garmin!</a>
           </div>
         );
       case 'profile':
