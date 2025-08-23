@@ -18,7 +18,7 @@ function App() {
       onClick: () => console.log("Projects clicked")
     },
     {
-      href: "#adventures",
+      href: "https://www.instagram.com/ethan_in_the_wild/",
       label: "Adventures",
       onClick: () => console.log("Adventures clicked")
     },
@@ -28,7 +28,7 @@ function App() {
       onClick: () => console.log("Interests clicked")
     },
     {
-      href: "#contact",
+      href: "https://www.linkedin.com/in/ethandesilets/",
       label: "Contact",
       onClick: () => console.log("Contact clicked")
     },
