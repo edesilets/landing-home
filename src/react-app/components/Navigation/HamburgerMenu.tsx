@@ -27,14 +27,16 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
   onToggle,
   menuItems = defaultMenuItems,
 }) => {
-  const handleMenuItemClick = (item: MenuItem) => {
+  const handleMenuItemClick = (event: React.MouseEvent, item: MenuItem) => {
     // Close menu when item is clicked
     onToggle();
 
-    // Call custom onClick if provided
+    // If there's a custom onClick handler, prevent default link behavior
     if (item.onClick) {
+      event.preventDefault();
       item.onClick();
     }
+    // Otherwise, let the default link behavior handle it (for external links like LinkedIn)
   };
 
   return (
@@ -71,8 +73,10 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({
               <a
                 href={item.href}
                 role="menuitem"
-                onClick={() => handleMenuItemClick(item)}
+                onClick={(e) => handleMenuItemClick(e, item)}
                 tabIndex={isOpen ? 0 : -1}
+                target={item.href.startsWith('http') ? '_blank' : undefined}
+                rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
                 {item.label}
               </a>

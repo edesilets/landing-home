@@ -1,1 +1,52 @@
 /* App-level styles */
+.placeholder-view {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-view h1 {
+  font-size: var(--font-size-hero);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.placeholder-view p {
+  font-size: var(--font-size-xl);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  .placeholder-view h1 {
+    color: #333;
+  }
+
+  .placeholder-view p {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .placeholder-view {
+    padding: 1rem;
+  }
+
+  .placeholder-view h1 {
+    font-size: 2.5rem;
+  }
+
+  .placeholder-view p {
+    font-size: var(--font-size-lg);
+  }
+}
