@@ -66,7 +66,7 @@ function App() {
         return <Projects />;
       case 'interests':
         return (
-          <div className="placeholder-view">
+          <div>
             <h1>Interests</h1>
             <p>This section is coming soon!</p>
           </div>
