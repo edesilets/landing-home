@@ -3,7 +3,7 @@ import './Adventures.css';
 
 const Adventures: React.FC = () => {
   return (
-    <div>
+    <div className="adventures-section">
       <h1>Adventures</h1>
       <p>Check out my adventures on social media and fitness platforms!</p>
       <div className="social-links">
