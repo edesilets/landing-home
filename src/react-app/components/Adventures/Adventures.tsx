@@ -28,7 +28,7 @@ const Adventures: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fa-solid fa-strava fa-lg"></i>
+          <i className="fa-brands fa-strava fa-lg"></i>
           <span>Connect on Strava</span>
         </a>
       </div>
