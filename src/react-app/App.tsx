@@ -25,7 +25,7 @@ function App() {
       href: "#home",
       label: "Home",
       onClick: () => {
-        console.log("Projects clicked");
+        console.log("Home clicked");
         navigateTo('profile');
       }
     },
@@ -74,9 +74,27 @@ function App() {
         return (
           <div className="placeholder-view">
             <h1>Adventures</h1>
-            <p>Check out my Instagram for now!</p>
-            <a href="https://www.instagram.com/ethan_in_the_wild/">Instagram</a>
-            <a href="https://connect.garmin.com/modern/profile/a624bd40-ba95-4b43-85ad-97e81321752e">Connect on Garmin!</a>
+            <p>Check out my adventures on social media and fitness platforms!</p>
+            <div className="social-links">
+              <a
+                href="https://www.instagram.com/ethan_in_the_wild/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link instagram-link"
+              >
+                <i className="fab fa-instagram"></i>
+                Follow on Instagram
+              </a>
+              <a
+                href="https://connect.garmin.com/modern/profile/a624bd40-ba95-4b43-85ad-97e81321752e"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link garmin-link"
+              >
+                <i className="fa-solid fa-person-hiking"></i>
+                Connect on Garmin
+              </a>
+            </div>
           </div>
         );
       case 'profile':
