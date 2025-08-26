@@ -11,27 +11,25 @@ const Adventures: React.FC = () => {
           href="https://www.instagram.com/ethan_in_the_wild/"
           target="_blank"
           rel="noopener noreferrer"
-          className="social-link instagram-link"
         >
           <i className="fab fa-instagram fa-lg"></i>
-          Follow on Instagram
+          <br />Follow on Instagram
         </a>
         <a
           href="https://connect.garmin.com/modern/profile/a624bd40-ba95-4b43-85ad-97e81321752e"
           target="_blank"
           rel="noopener noreferrer"
-          className="social-link garmin-link"
         >
           <i className="fa-solid fa-person-hiking fa-lg"></i>
-          Connect on Garmin
+          <br />Connect on Garmin
         </a>
       </div>
-      <div>
+      {/* <div>
         <ul>
           <li> Garmin Activities</li>
-          {/* <li> Only show non gym and walking Activities</li> */}
+          <li> Only show non gym and walking Activities</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

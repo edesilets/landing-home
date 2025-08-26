@@ -11,7 +11,13 @@
 .adventures-container h1 {
   font-size: var(--font-size-hero);
   line-height: 1.1;
+  margin-top: 2em;
   margin-bottom: 2rem;
   font-weight: 700;
   text-align: center;
+}
+
+.social-links a {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
