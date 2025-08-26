@@ -17,10 +17,10 @@ export interface ProjectsProps {
 const defaultProjects: Project[] = [
   {
     id: '1',
-    title: 'Sample Project',
-    description: 'This is a sample project description. You can replace this with your actual project details, technologies used, and what makes this project special.',
-    imageUrl: 'https://via.placeholder.com/400x300/61dafb/ffffff?text=Project+Image',
-    link: 'https://github.com/your-username/project-name'
+    title: 'Stash to bitbucket migration script',
+    description: 'A small set of python scripts that helps move from Stash to Atlassian bitbucket',
+    imageUrl: 'https://www.python.org/static/community_logos/python-logo.png',
+    link: 'https://github.com/edesilets'
   },
   // Add more projects here as needed
 ];
