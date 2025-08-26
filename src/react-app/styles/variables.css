@@ -6,6 +6,8 @@
   --secondary-hover: #098be2aa;
   --accent-color: #ff5ccc;
   --background-dark: #242424;
+  --background-dark-light: rgba(255, 255, 255, 0.1);
+  --background-dark-light-border: rgba(255, 255, 255, 0.2);
   --background-light: #ffffff;
   --text-light: rgba(255, 255, 255, 0.87);
   --text-dark: #213547;

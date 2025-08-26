@@ -13,7 +13,7 @@ const Adventures: React.FC = () => {
           rel="noopener noreferrer"
         >
           <i className="fab fa-instagram fa-lg"></i>
-          <br />Follow on Instagram
+          <span>Follow on Instagram</span>
         </a>
         <a
           href="https://connect.garmin.com/modern/profile/a624bd40-ba95-4b43-85ad-97e81321752e"
@@ -21,7 +21,15 @@ const Adventures: React.FC = () => {
           rel="noopener noreferrer"
         >
           <i className="fa-solid fa-person-hiking fa-lg"></i>
-          <br />Connect on Garmin
+          <span>Connect on Garmin</span>
+        </a>
+        <a
+          href="https://www.strava.com/athletes/16920867"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-solid fa-strava fa-lg"></i>
+          <span>Connect on Strava</span>
         </a>
       </div>
       {/* <div>
