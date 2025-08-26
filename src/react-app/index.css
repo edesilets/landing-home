@@ -13,11 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+a, a:link, a:visited, a:focus, a:active {
   font-weight: 500;
   color: var(--primary-color);
   text-decoration: inherit;
 }
+
 a:hover {
   color: var(--primary-hover);
 }
